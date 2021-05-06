@@ -57,6 +57,7 @@ hr {
 .main {
     width: 80%;
     margin: auto;
+    padding: 70px 200px;
 }
 
 
@@ -73,35 +74,21 @@ body {
 
 /***aside***/
 main {
-    padding: 70px 200px;
+    padding: 50px;
 }
 
 main aside {
     position: relative;
     right: -3%;
     padding-top: 50px;
-   
 }
 
-@media(max-width: 767px) {
 
-    main {
-        padding: 30px 100px;
-    }
-    main aside {
-        position: relative;
-        right: 0%;
-        padding-top: 50px;
-        padding-bottom: 20px;
-       
-    }
-
-    nav li{
-        text-align: center;
-    }
-    h1{
-        text-align: center;
-    }
+.fa-bars{  
+    display: none; 
+}
+.icon{
+    position: none;
 }
 
 nav {
@@ -109,13 +96,53 @@ nav {
     border: 10px solid rgba(255,255,255,.8);
     padding: 30px;
     border-radius: 0 30px;
+    
 }
 
 main aside ul li a{
     color: var(--bela);
-    font-style: bold;
     font-size: 1.2rem;
 }
+
+
+@media(max-width: 767px) {
+
+    main {
+        padding: 0 100px;
+    }
+
+    main aside {
+        position: none;
+        right: 0%;
+        padding-top: 50px;
+        padding-bottom: 20px;   
+    }
+
+    main nav {
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+   .icon{
+        position: absolute;
+        top: 160px;
+        left: 500px;
+        background: transparent;
+    }
+
+    .fa-bars{  
+        display: block; 
+        padding: 10px;
+        font-size: 2.5rem;
+        color: var(--svetlozuta);  
+        background: transparent;
+    }
+}
+
 
 /***wrapper***/
 .wrapper {

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Floralys</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,14 +15,19 @@
         <aside class="col-4">
             <h1>Floralys</h1>
             <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
+                <ul id="myLinks">
+                    <li><a  href="">Home</a></li>
                     <li><a href="">Flowers</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a  href="">Contact</a></li>
                 </ul>
+
             </nav>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </aside>
 
          <section class="wrapper col-8">
@@ -69,7 +75,7 @@
         </section>
     </main>
 
-
+<script src="main.js"></script>
 </body>
 
 </html>
