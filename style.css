@@ -83,6 +83,27 @@ main aside {
    
 }
 
+@media(max-width: 767px) {
+
+    main {
+        padding: 30px 100px;
+    }
+    main aside {
+        position: relative;
+        right: 0%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+       
+    }
+
+    nav li{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
 nav {
     background: var(--pink);
     border: 10px solid rgba(255,255,255,.8);
